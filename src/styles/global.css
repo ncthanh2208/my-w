@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+      @apply bg-black;
+      scroll-behavior: smooth;
+      height: 150vh;
+    }
+    .z-2000 {
+      z-index: 2000;
+    } 
+    .nav-items {
+      transition: all 0.15s ease-out;
+      overflow: hidden;
+    }
+    .nav-items.show {
+      @apply border-t-2 border-yellow;
+      max-height: 300px;
+      transition: all 0.25s ease-in;
+    }
+}
