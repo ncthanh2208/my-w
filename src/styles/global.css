@@ -5,15 +5,16 @@
 @layer base {
     html {
       @apply bg-black;
-      scroll-behavior: smooth;
+       
       height: 150vh;
     }
     .z-2000 {
       z-index: 2000;
     } 
     .nav-items {
-      transition: all 0.15s ease-out;
+      max-height: 0px;
       overflow: hidden;
+      transition: all 0.15s ease-out;
     }
     .nav-items.show {
       @apply border-t-2 border-yellow;

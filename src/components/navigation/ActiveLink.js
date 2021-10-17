@@ -14,8 +14,8 @@ const ActiveLink = ({ children, href, ...props }) => {
       }
     )
     return (
-      <Link to= {href}>
-        <span className={classNames} >{children}</span>
+      <Link to= {href} className={classNames}>
+        {children}
       </Link>
     )
   }
