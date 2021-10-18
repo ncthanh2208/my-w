@@ -38,7 +38,7 @@ const NavBar = () => {
                 <BurgerButton isActive={isActive} toggle={toggleNav}/>
               </div>
             </div>
-            <div className={`flex flex-col text-center justify-center font-semibold text-xl nav-items md:border-none md:flex-row md:max-h-[300px] ${isActive ? 'show' : ''}`}>
+            <div className={`flex flex-col text-center justify-center font-bold text-xl nav-items md:border-none md:flex-row md:max-h-[300px] ${isActive ? 'show' : ''}`}>
               {navigation.map((item) => (
                 <ActiveLink href={item.href} onClick={closeNav}>
                   {item.name}

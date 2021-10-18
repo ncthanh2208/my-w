@@ -5,8 +5,7 @@
 @layer base {
     html {
       @apply bg-black;
-       
-      height: 150vh;
+      scroll-behavior: smooth;
     }
     .z-2000 {
       z-index: 2000;
@@ -20,5 +19,13 @@
       @apply border-t-2 border-yellow;
       max-height: 300px;
       transition: all 0.25s ease-in;
+    }
+    .hero-section{
+      background-image: linear-gradient(0,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../images/my-w-w.jpg");
+      background-position: center; 
+      background-repeat: no-repeat;
+    }
+    .card-img {
+      @apply rounded-2xl mx-auto;
     }
 }

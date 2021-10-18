@@ -4,10 +4,12 @@ const BlogPage = () => {
 
     return (
         <React.Fragment>
-            <NavBar/>
-            <span className="text-yellow">
-                Write every thing what you think ":)"
-            </span>
+            <NavBar />
+            <section>
+                <div className="container mx-auto relative pt-5 lg:px-40 text-center">
+                    <h2 className='text-white text-2xl my-8 font-medium sm:text-4xl'>The site is under development and will be finished soon...</h2>
+                </div>
+            </section>
         </React.Fragment>
     );
 }
