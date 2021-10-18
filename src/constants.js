@@ -36,14 +36,14 @@ const CAROUSEL_RESPONSIVE = {
       width: 100,
       height: 100,
       alt: 'typescript',
-      priority: false
+      priority: true
     },
     {
       src: go,
       width: 100,
       height: 100,
       alt: 'golang',
-      priority: false
+      priority: true
     },
     {
       src: java,

@@ -631,7 +631,7 @@ html {
 }
 
 .hero-section{
-  background-image: linear-gradient(0,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../images/my-w-w.jpg");
+  background-image: linear-gradient(0,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../images/my-w-w.jpg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -694,6 +694,11 @@ html {
   margin-bottom: 2rem;
 }
 
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .my-0\.5 {
   margin-top: 0.125rem;
   margin-bottom: 0.125rem;
@@ -716,12 +721,12 @@ html {
   margin-bottom: 2rem;
 }
 
-.flex {
-  display: flex;
+.mt-8 {
+  margin-top: 2rem;
 }
 
-.hidden {
-  display: none;
+.flex {
+  display: flex;
 }
 
 .h-\[3px\] {
@@ -742,10 +747,6 @@ html {
 
 .w-full {
   width: 100%;
-}
-
-.flex-grow {
-  flex-grow: 1;
 }
 
 .translate-y-\[6px\] {
@@ -785,6 +786,10 @@ html {
   flex-direction: column;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .items-center {
   align-items: center;
 }
@@ -807,10 +812,6 @@ html {
 
 .rounded-full {
   border-radius: 9999px;
-}
-
-.border-4 {
-  border-width: 4px;
 }
 
 .border-t-4 {
@@ -857,6 +858,16 @@ html {
   padding-bottom: 0.5rem;
 }
 
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -865,11 +876,6 @@ html {
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
 }
 
 .pt-5 {
@@ -947,6 +953,12 @@ html {
   transition-duration: 150ms;
 }
 
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .transition {
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -961,6 +973,16 @@ html {
 
 .duration-150 {
   transition-duration: 150ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover\:-translate-y-1:hover {
+  --tw-translate-y: -0.25rem;
+  -webkit-transform: var(--tw-transform);
+          transform: var(--tw-transform);
 }
 
 .hover\:bg-yellow:hover {

@@ -1,8 +1,8 @@
 import React from 'react';
 import NavBar from '../components/navigation/Navigation'
 import ImageLink from '../components/ImageLink';
-import { SKILL_IMAGES } from '../constants'
-
+import { SKILL_IMAGES } from '../constants';
+import { FiGithub,FiFacebook,FiMail } from "react-icons/fi";
 const HomePage = () => {
 
     return (
@@ -20,9 +20,18 @@ const HomePage = () => {
             <section className="container mx-auto py-6 lg:px-40">
                 <div className="text-center">
                     <h2 className='text-white text-2xl mb-8 font-medium sm:text-4xl pb-5'>Skills</h2>
-                    <ImageLink imgClassName='card-img' images={SKILL_IMAGES}/>
+                    <ImageLink imgClassName='card-img' images={SKILL_IMAGES} />
                 </div>
-
+            </section>
+            <section className="hero-section">
+                <div className="container py-10 mx-auto">
+                    <h2 className='text-white text-2xl mb-8 font-medium sm:text-4xl pb-5 text-center'>Find me on</h2>
+                    <div className="flex flex-wrap justify-center mt-8">
+                        <a href='https://github.com/ncthanh2208' target='_blank' title='Github' className='mx-4 hover:-translate-y-1 transition-all ease-in-out duration-300'><FiGithub color='white' size='2rem'/></a>
+                        <a href='mailto:nguyenchithanh228244@gmail.com' target='_blank' title='Email' className='mx-4 hover:-translate-y-1 transition-all ease-in-out duration-300'><FiMail color='white' size='2rem'/></a>
+                        <a href='https://www.facebook.com/nguyen.thanh228/' target='_blank' title='Facebook' className='mx-4 hover:-translate-y-1 transition-all ease-in-out duration-300'><FiFacebook color='white' size='2rem'/></a>
+                    </div>
+                </div>
             </section>
         </React.Fragment>
     );
